@@ -13,9 +13,9 @@
         align-items: center;
         padding-right: 0rem !important;
         padding-left: 0rem !important;
-
         padding: 0 !;
         gap: .9rem;
+        width: 100%;
 
     }
 
@@ -23,15 +23,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 60px;
-        /* width: 100%; */
+        height: 50px;
+        width: 100%;
     }
 
     .ul {
         display: flex;
         justify-content: inherit;
         padding: 0;
-        gap: ;
+        gap: .5rem !important;
+        width: 100%;
 
     }
 
@@ -43,18 +44,25 @@
     }
 
     .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0 !important;
+        /* width: 100%; */
+        padding-right: 0 !important;
+        gap: .2rem !important;
         padding: 0;
-
-        gap: .2rem;
     }
 
     .logo {
         font-size: .8rem;
+        gap: .2rem;
+
     }
 
     .btn-1 {
-        padding: 10px;
-
+        padding: 5px;
+margin-bottom: .7rem;
         font-size: .6rem;
     }
 
@@ -72,18 +80,25 @@
     }
 
     .first {
+        /* background-color: red; */
         position: absolute;
         width: 50%;
-        height: 70%;
+        height: 50%;
         font-size: .4rem;
-        top: 50%;
+        top: 60%;
         line-height: 2;
     }
 
     header {
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
+    main p{
+        font-size: .9rem;
+        line-height: 1;
+        margin-bottom: 0 !important;
+
+    }
     #contact {
         margin-top: 1rem;
     }
@@ -186,7 +201,9 @@
 
     #top1 {
 
-        font-size: 1rem;
+        font-size: .8rem;
+        text-align: center;
+        margin-top: 0 !important;
     }
 
     .foot-up {
@@ -480,7 +497,7 @@
         width: 50%;
         height: 70%;
         font-size: .4rem;
-        top: 10%;
+        top: 60%;
         line-height: 2;
     }
 
@@ -587,7 +604,7 @@
     }
 
     main p {
-        font-size: .5rem;
+        font-size: .9rem;
         line-height: 1;
     }
 
@@ -800,7 +817,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px) {
     .blue {
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -813,4 +830,4 @@
         padding-bottom: 0;
     }
 
-} 
+}
