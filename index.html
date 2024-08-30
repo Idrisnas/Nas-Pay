@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day-7</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <nav class="blue">
+        <div class="nav">
+            <h4 class="logo">Nas-Pay</h4>
+
+            <div class="nav-links">
+                <ul class=" ul">
+                    <li class=""><a href="#container">Loans</a></li>
+                    <li class="none-1"><a href="">Investment</a></li>
+                    <li class="none"><a href="#container">Payments</a></li>
+                    <li class=""><a href="#contact">Contact</a></li>
+                    <li><a href="#footer" class="none">About</a></li>
+
+
+                </ul>
+
+                <a href="#container" class="btn-1">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="cont" id="cont">Welcome to Nas-Pay Loan Company</h1>
+
+    </header>
+    <div class="bg-1">
+        <div class="overlay"></div>
+        <div class="first">
+            <h1>Get instant personal loans of up to ₦5 million. <br>
+                Apply for a loan now and get the funds in less than 3 hours.
+            </h1>
+            
+            <a href="#container" class="btn-1">Apply Now</a>
+        </div>
+    </div>
+
+    <main>
+        <h1>Loans</h1>
+        <p>Do you have an urgent need for cash to settle bills, take care of emergencies or grab an opportunity? Does
+            payday seem so far and bills are piling up? Don’t worry! Our convenient, secure and instant loans have got
+            you covered.
+
+            Apply for a loan now and get the funds in less than 3 hours.</p>
+        <div>
+            <img src="simplerateandterm-min.png" alt="hand" class="hand1">
+            <h3>Simple Repayment Terms and Rates</h3>
+            <p>There are no hidden charges, our repayment terms are clear and convenient, and you don’t need to have a
+                cheque book.</p>
+        </div>
+        <div class="hands">
+            <div>
+                <img src="hasslefree-min.png" alt="two hand" class="hand2">
+
+                <h3>Hassle Free</h3>
+                <p>Easy to use tools from anywhere. Instant cash immediately your loan is approved . No gimmicks,
+                    confusing terms or hidden charges.</p>
+            </div>
+            <div>
+                <img src="moneywhenyouneedit-min.png" alt="wallet" class="hand3">
+                <h3>Instant Cash</h3>
+                <p>Whatever or wherever you need cash, we’re right there.</p>
+            </div>
+        </div>
+        <a href="#container" class="btn-2">Apply Now</a>
+
+        <p class="mgt-2"><span>Representative example:</span> Loan amount of ₦3,500,000 borrowed for 12 months. Monthly
+            Interest Rate:- 3.84%. No other fees.</p>
+        <p><span>Minimum and maximum loan term: </span> 3 – 12 months.</p>
+        <!-- <span>Contact Details:</span>
+            <p>Phone:- 08117513671. Email:- nasiru.idris4646@gmail.com</p> -->
+
+
+
+    </main>
+    <div class="container">
+
+    </div>
+
+    <div class="all">
+<h1>Please Fill The form Below to Apply for Our Quick Loan</h1>
+        <div class="form-container" id="container">
+            <h1 id="top1"></h1>
+            <form action="submit.html" id="loan-form">
+                <div class="form-group">
+                    <label for="current_bal">Current Amount in Your Account</label>
+                    <input type="number" id="current_bal" placeholder="Enter current balance in your Account" required>
+                    <span id="amt_error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="amt_to_collect">Loan Amount Needed</label>
+                    <input type="number" id="amt_to_collect" placeholder="Enter loan amount" required>
+                    <span id="amt_error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="credit-history"> Credit History</label>
+                    <select id="credit-history" required>
+                        <option value="" disabled selected>Please select credit history</option>
+                        <option value="less">Two months</option>
+                        <option value="less">Four months</option>
+                        <option value="high">Six months</option>
+                        <option value="high">Eight months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deposit_date">Last Deposit Date</label>
+                    <select id="deposit_date">
+                        <option value="" disabled selected>Please select</option>
+                        <option value="less_1month">Within a Week</option>
+
+                        <option value="less_1month">Within a month</option>
+                        <option value="high_1month">Within Two months</option>
+                        <option value="high_1month">Within Three months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="collection_date">Last Loan Collection Date</label>
+                    <select id="collection_date">
+                        <option value="" disabled selected>Please select</option>
+                        <option value="col_less">One month ago</option>
+                        <option value="col_high">Six months ago</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="repayment">Loan Repayment Period</label>
+                    <select id="repayment">
+                        <option value="" disabled selected>Please select</option>
+                        <option value="less_repay">1 month</option>
+                        <option value="high_repay">6 months</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="account_type">Account Type</label>
+                    <select id="account_type">
+                        <option value="" disabled selected>Please select</option>
+                        <option value="current">Current</option>
+                        <option value="savings">Savings</option>
+                    </select>
+                </div>
+                <button onclick="getLoan()" type="button"></a>Submit</button>
+                <p id="finish"></p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <h1>Happy Customer Stories.</h1>
+        <div class="Customers">
+
+            <div class="customer">
+
+                <div class="image">
+                    <img src="eazy.jpg" alt="">
+                </div>
+                <p>"I was surprised at how fast and simple it was to apply for a loan through this app. The entire
+                    process took just a few minutes, and I had the funds in my account the next day. The interface is
+                    user-friendly, and the customer service is top-notch!"
+
+                </p>
+                <div class="name">
+                    <span>Mr. Ezekiel</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+                <div class="image">
+                    <img src="esther.jpg" alt="">
+                </div>
+                <p>"This app is a lifesaver! I needed a loan urgently, and the app delivered exactly as promised. What I
+                    appreciate most is the transparency—no hidden fees, clear terms, and competitive interest rates.
+                    Highly recommended for anyone in need of a quick, reliable loan."</p>
+                <div class="name">
+                    <span>Miss. Esther</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="jeph.jpg" alt="">
+                </div>
+                <p>"The customer support team is amazing! They guided me through every step of the loanapplication
+                    process and answered all my questions with patience. The app itself is intuitive, and I love that I
+                    can track my payments easily. "
+
+                </p>
+                <div class="name">
+                    <span>Mr.Jephthah</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="abdulaziz.jpg" alt="">
+                </div>
+                <p>"This app is incredibly convenient. I applied for a loan from the comfort of my home, and the
+                    security features gave me peace of mind. The approval was fast, and I was kept informed throughout
+                    the process. I’ll definitely use this app again if I need another loan."
+                </p>
+                <div class="name">
+                    <span>Mr.Abdulaziz</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="bill.jpg" alt="">
+                </div>
+                <p>"What sets this loan app apart is the flexibility in repayment options. I was able to choose a plan
+                    that suited my financial situation, which made all the difference. The process was straightforward,
+                    and I appreciate the transparency and ease of use."
+                </p>
+                <div class="name">
+                    <span>Mr.Ibrahim</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="emmanuel.jpg" alt="">
+                </div>
+                <p>"I had a great experience using this loan app. The application process was hassle-free, and the
+                    approval time was impressive. The app also provides clear and detailed information about the loan
+                    terms, which helped me make an informed decision. Highly recommended!"
+                </p>
+                <div class="name">
+                    <span>Mr.Emmanuel</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="ahmad.jpg" alt="">
+                </div>
+                <p>"This loan app is by far the easiest I've ever used. The application process is simple, and the
+                    design is clean and intuitive. I loved how efficient everything was—from application to
+                    disbursement. It's great to have a reliable app like this when you need quick financial help."
+                </p>
+                <div class="name">
+                    <span>Mr.Ahmad</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="Alamin.jpg" alt="">
+                </div>
+                <p>"I was pleasantly surprised by the low interest rates offered by this app compared to others I've
+                    tried. The repayment terms are reasonable, and I didn't feel pressured or stressed at any point.
+                    It's nice to see an app that genuinely cares about its customers."
+                </p>
+                <div class="name">
+                    <span>Mr.Alamin</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="chinazom.jpg" alt="">
+                </div>
+                <p>"This app saved me during an emergency. I needed money for an unexpected medical expense, and the app provided the funds quickly with no hassle. The repayment plan was flexible, making it easy for me to manage my finances afterward. I’m truly grateful for this service!"
+                </p>
+                <div class="name">
+                    <span>Miss.Chinazom</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="olayemi.jpg" alt="">
+                </div>
+                <p>"I was looking for a way to build my credit, and this loan app has been a great tool for that. They offer reasonable terms, and I’ve noticed my credit score improving since I started using it. The app also sends reminders, so I never miss a payment. It’s been a positive experience overall."
+                </p>
+                <div class="name">
+                    <span>Mr.Olayemi</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="davies.jpg" alt="">
+                </div>
+                <p>"I appreciate how transparent this loan app is. There were no hidden fees, and all the terms were clearly explained upfront. It’s refreshing to use a service that’s honest and straightforward. I will definitely use this app again if I need a loan in the future."
+                </p>
+                <div class="name">
+                    <span>Mr. Davies</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+            <div class="customer">
+
+                <div class="image">
+                    <img src="" alt="B">
+                </div>
+                <p>"As a small business owner, this app has been a game-changer. It’s helped me secure funding quickly to cover unexpected expenses, and the process was much faster than going through a traditional bank. The app is well-designed, and the support team is always available when I need them."
+                </p>
+                <div class="name">
+                    <span>Miss Becky</span>
+                    <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="got">
+            <h1>Got Questions or Feedback?</h1>
+            <div class="got-content">
+                <div>
+                    <ion-icon name="headset-outline" class="icon"></ion-icon>
+                    <p>Call</p>
+                </div>
+
+                <div>
+                    <ion-icon name="at-outline" class="icon"></ion-icon>
+                    <p>Email</p>
+                </div>
+                <div>
+                    <ion-icon name="help-outline" class="icon"></ion-icon>
+                    <P>FAQ</P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="foot-up">
+            <div class="foot-1">
+                <h1 class="logo">Nas-Pay</h1>
+                <p> Nas-Pay is a mobile Loan payment company. We are building an ecosystem to enable people to
+                    digitallyget loans, and creating simple financial access for everyone.</p>
+            </div>
+            <div class="foot-2">
+                <h4>Contact</h4>
+                <p><span>Call: </span>08117513671</p>
+                <p><span>Twitter: </span><a href="">nas_pay</a></p>
+                <p><span>Facebook: </span><a href="">Nas-Pay</a></p>
+                <p><span>WhatsApp: </span><a href="#">08154813306</a></p>
+                <p><span>Address: </span><a
+                        href="https://maps.app.goo.gl/G7L96AU1PTSADM9u9?g_st=com.google.maps.preview.copy">Kubwa Arab
+                        Road, Abuja 901101, Federal Capital Territory</a></p>
+            </div>
+            <div class="foot-3">
+                <h4>About</h4>
+                <ul class="foot-ul">
+                    <li><a href="">Company</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Media Kit</a></li>
+                </ul>
+
+                <h4>Support</h4>
+                <ul class="foot-ul">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Help Desk</a></li>
+                    <li><a href="">Find an agent</a></li>
+                </ul>
+            </div>
+            <div class="foot-4">
+                <h4>Links</h4>
+                <ul class="foot-ul">
+                    <li><a href="">Donate.ng</a></li>
+                    <li><a href="">Nas Blog</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Remittances</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Security</a></li>
+                </ul>
+            </div>
+            <div class="foot-5">
+                <h4>Products</h4>
+                <ul class="foot-ul">
+                    <li><a href="">Personal</a></li>
+                    <li><a href="">Agent</a></li>
+                    <li><a href="">Business
+                        </a></li>
+                    <li><a href="">Developer</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="foot-down">
+            <div class="ft-1">
+                <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+                <ion-icon name="logo-facebook" class="icons"></ion-icon>
+                <ion-icon name="logo-twitter" class="icons"></ion-icon>
+                <ion-icon name="logo-instagram" class="icons"></ion-icon>
+
+            </div>
+            <div class="ft-2">
+                <a href="">Terms of Service</a>
+                <a href="">Security</a>
+                <p>&copy; 2024 Nas-Pay</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+
+.all {
+    /* background-color: aqua; */
+    padding: 1rem;
+}
+
+
+
+/* Form */
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* width: 100%; */
+    /* max-width: 400px; */
+}
+
+#top1 {
+    text-align: center;
+    color: #4cae4c;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4cae4c;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+input[type="number"]::placeholder {
+    color: #aaa;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#amt_error {
+    color: red;
+    font-size: 12px;
+}
+
+#finish {
+    margin-top: 20px;
+    color: #5cb85c;
+    text-align: center;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    /* margin: 0; */
+}
+
+/* Form */
+
+.container {
+    background-color: aqua;
+    /* width: 100%; */
+    /* max-width: 400px; */
+    /* height: 100vh; */
+
+}
+
+.container h1 {
+    color: #5cb85c;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.logo {
+    color: #4cae4c;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.bg-1 {
+    background-image: url(../loansheaderbanner-min.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.cont {
+    color: #4cae4c;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.blue {
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    top: 0%;
+    width: 100%;
+    height: 100px;
+}
+
+header {
+
+    margin-top: 121px;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.nav {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    gap: 7rem;
+}
+
+
+.nav ul {
+    /* background-color: green; */
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 3rem;
+}
+
+.ul a {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #aaa;
+    text-decoration: none;
+    /* background-color: aqua; */
+}
+
+.ul a:hover {
+    color: #4cae4c;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 600PX;
+    color: white;
+    /* font-weight: 900; */
+    /* background-color: rebeccapurple; */
+    padding: 1REM;
+    position: absolute;
+    top: 20%;
+    line-height: 1.3;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.nav-links {
+    padding: 0;
+    /* background-color: peru; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main {
+    text-align: center;
+    width: 90%;
+    margin: 5rem auto;
+
+}
+
+main h1 {
+    color: #4cae4c;
+    font-size: 2rem;
+}
+main h3 {
+    color: #4cae4c;
+    font-size: 2rem;
+
+}
+main p{
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+main span {
+    color: #4cae4c;
+}
+
+.hand1,
+.hand2 {
+    width: 20%;
+}
+
+.hand3 {
+    width: 35%;
+}
+
+.hands {
+    padding: 1rem;
+    /* background-color: gold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#got {
+    /* background-color: white; */
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    text-align: center;
+    
+}
+
+.got-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#got h1 {
+    color: #4cae4c;
+
+}
+
+#got p {
+    color: #4cae4c;
+
+}
+
+.icon {
+    color: #ffffff;
+    width: 100%;
+    height: 30px;
+    background-color: #4cae4c;
+    /* padding: 1rem; */
+    /* border-radius: 50px; */
+    cursor: pointer;
+}
+.icon:hover{   
+
+    background-color: #072407;
+}
+#contact{
+    margin-top: 6rem;
+}
+#contact h1{
+    text-align: center;
+    color: #4cae4c;
+    font-size: 2rem;
+}
+
+/* footer */
+footer{
+    background-color: black;
+}
+.foot-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid wheat;
+}
+.foot-up a, li{
+    text-decoration: none;
+    list-style: none;
+}
+.foot-1 p{
+    color: #aaa;
+}
+.foot-1{
+    width: 30%;
+}
+.foot-2{
+    width: 20%;
+}
+.foot-3{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* line-height: 1; */
+    
+}
+.foot-3 ul{
+    line-height: 1.5;
+    text-align: left !important;
+    
+}
+.foot-3 h4{
+    margin: 0;
+    text-align: center;
+
+}
+.foot-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.foot-4 ul{
+    line-height: 1.5;
+    text-align: left !important;
+    
+}
+.foot-4 h4{
+    text-align: center;
+    margin: 0;
+}
+.foot-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* line-height: 1; */
+}
+.foot-5 ul{
+    line-height: 1.5;
+    text-align: left !important;
+    
+}
+.foot-5 h4{
+    text-align: center;
+    margin: 0;
+}
+.foot-up h4{
+    color: #4cae4c;
+
+}
+
+.foot-ul a {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #aaa;
+    text-decoration: none;
+    /* background-color: aqua; */
+}
+
+.foot-ul a:hover {
+    color: #4cae4c;
+}
+.foot-2 p{
+    color: #aaa;
+}
+.foot-2 span{
+    color: #4cae4c;
+}
+.foot-2 a{
+    color: #aaa;
+}
+.foot-2 a:hover{
+    color: #4cae4c;
+}
+.foot-down{
+    /* text-align: end; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.ft-1{
+    margin-top: 1rem;
+    display: flex;
+gap: 1rem;
+}
+.ft-2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.foot-down a, p{
+    text-decoration: none;
+    color: #aaa;
+
+}
+.foot-down a:hover{
+    color: #4cae4c;
+}
