@@ -229,12 +229,11 @@ main span {
     color: #4cae4c;
 }
 
-.hand1,
-.hand2 {
+.hand1 {
     width: 20%;
 }
 
-.hand3 {
+.hand3, .hand2 {
     width: 35%;
 }
 
@@ -245,8 +244,17 @@ main span {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 1rem;
 }
 
+.one {
+    width: 100%;
+}
+.two{
+  
+    width: 100%;
+
+}
 #got {
     /* background-color: white; */
     margin-top: 5rem;
@@ -286,10 +294,10 @@ main span {
 
     background-color: #072407;
 }
-#contact{
+#contacts{
     margin-top: 6rem;
 }
-#contact h1{
+#contacts h1{
     text-align: center;
     color: #4cae4c;
     font-size: 2rem;

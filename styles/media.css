@@ -45,10 +45,10 @@
 
     .nav-links {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding-left: 0 !important;
-        /* width: 100%; */
+        width: 70%;
         padding-right: 0 !important;
         gap: .2rem !important;
         padding: 0;
@@ -61,8 +61,8 @@
     }
 
     .btn-1 {
-        padding: 5px;
-margin-bottom: .7rem;
+        padding: 0px 15px;
+        margin-bottom: .7rem;
         font-size: .6rem;
     }
 
@@ -93,12 +93,13 @@ margin-bottom: .7rem;
         margin-top: 60px;
     }
 
-    main p{
+    main p {
         font-size: .9rem;
         line-height: 1;
         margin-bottom: 0 !important;
 
     }
+
     #contact {
         margin-top: 1rem;
     }
@@ -497,7 +498,7 @@ margin-bottom: .7rem;
         width: 50%;
         height: 70%;
         font-size: .4rem;
-        top:20%;
+        top: 20%;
         line-height: 2;
     }
 
