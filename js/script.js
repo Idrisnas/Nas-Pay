@@ -1,6 +1,6 @@
 
-// let user = prompt("what is your name");
-// top1.innerHTML = `Hello ${user}, Please Proced to fill the form below accurately!`
+let user = prompt("what is your name");
+top1.innerHTML = `Hello ${user}, Please Proced to fill the form below accurately!`
 let form = document.getElementById('form')
 let amtError = document.getElementById('amt_error')
 let points = 0
@@ -18,14 +18,14 @@ let finish = document.getElementById('finish')
      if(balance > collect){
         points = points +10
        top1.innerHTML = `Hello ${user}, Please Proced to fill the form below accurately!`
-        // console.log(points)
+        console.log(points)
      }else{
         points = points -10
-        // console.log(points)
+        console.log(points)
      }
      if (history === 'high') {
         points = points +10
-        // console.log(points)
+        console.log(points)
      }
     if (depositDate === 'high_1month') {
         points = points +5
@@ -33,7 +33,7 @@ let finish = document.getElementById('finish')
     }
      if (lastCollect === 'col_high') {
         points = points +10
-        // console.log(points)
+        console.log(points)
 
      }
 
@@ -42,7 +42,7 @@ let finish = document.getElementById('finish')
         console.log(points)
      }else{
         points = points +5
-        // console.log(points)
+        console.log(points)
      }
      if (repayment === 'high_repay') {
         points = points +5  
