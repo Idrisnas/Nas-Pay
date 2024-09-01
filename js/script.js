@@ -1,5 +1,5 @@
 
-let user = prompt("what is your name");
+let user = prompt("Wellcome! What is your name");
 top1.innerHTML = `Hello ${user}, Please Proced to fill the form below accurately!`
 let form = document.getElementById('form')
 let amtError = document.getElementById('amt_error')
