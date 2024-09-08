@@ -20,36 +20,50 @@ let username = prompt("Welcome! What is your name?");
             if (currentBal === "") {
                 document.getElementById("aErr").textContent = "Please enter your current balance.";
                 isValid = false;
+            }else{
+               document.getElementById("aErr").textContent = "";
             }
 
             if (loanAmount === "") {
                 document.getElementById("bErr").textContent = "Please enter the loan amount needed.";
                 isValid = false;
+            }else{
+               document.getElementById("bErr").textContent = "";
             }
 
             if (creditHistory === "") {
                 document.getElementById("cErr").textContent = "Please select your credit history.";
                 isValid = false;
+            }else{
+               document.getElementById("cErr").textContent = "";
             }
 
             if (depositDate === "") {
                 document.getElementById("dErr").textContent = "Please select the last deposit date.";
                 isValid = false;
+            }else{
+               document.getElementById("dErr").textContent = "";
             }
 
             if (collectionDate === "") {
                 document.getElementById("eErr").textContent = "Please select the last loan collection date.";
                 isValid = false;
+            }else{
+               document.getElementById("eErr").textContent = "";
             }
 
             if (repayment === "") {
                 document.getElementById("fErr").textContent = "Please select the loan repayment period.";
                 isValid = false;
+            }else{
+               document.getElementById("fErr").textContent = "";
             }
 
             if (accountType === "") {
                 document.getElementById("gErr").textContent = "Please select the account type.";
                 isValid = false;
+            }else{
+               document.getElementById("gErr").textContent = "";
             }
 
             //  scoring and submission
