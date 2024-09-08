@@ -1,68 +1,98 @@
 
-let user = prompt("Wellcome! What is your name");
-top1.innerHTML = `Hello ${user}, Please Proced to fill the form below accurately!`
-let form = document.getElementById('form')
-let amtError = document.getElementById('amt_error')
-let points = 0
-function getLoan(){
-    let balance = document.getElementById('current_bal').value
-    let collect = document.getElementById('amt_to_collect').value
-    let history = document.getElementById('credit-history').value
-    let depositDate = document.getElementById('deposit_date').value
+let username = prompt("Welcome! What is your name?");
+        document.getElementById('top1').innerHTML = `Hello ${username}, Please proceed to fill the form below accurately!`;
 
-    let lastCollect = document.getElementById('collection_date').value
-    let repayment = document.getElementById("repayment").value
-    let accounType = document.getElementById("account_type").value
-let finish = document.getElementById('finish')
+        localStorage.setItem('username', username);
+        let points = 0;
 
-     if(balance > collect){
-        points = points +10
-       top1.innerHTML = `Hello ${user}, Please Proced to fill the form below accurately!`
-        console.log(points)
-     }else{
-        points = points -10
-        console.log(points)
-     }
-     if (history === 'high') {
-        points = points +10
-        console.log(points)
-     }
-    if (depositDate === 'high_1month') {
-        points = points +5
-        console.log(points)
-    }
-     if (lastCollect === 'col_high') {
-        points = points +10
-        console.log(points)
+        function getLoan() {
+            //  form values
+            let currentBal = document.getElementById("current_bal").value;
+            let loanAmount = document.getElementById("amt_to_collect").value;
+            let creditHistory = document.getElementById("credit-history").value;
+            let depositDate = document.getElementById("deposit_date").value;
+            let collectionDate = document.getElementById("collection_date").value;
+            let repayment = document.getElementById("repayment").value;
+            let accountType = document.getElementById("account_type").value;
 
-     }
+            let isValid = true;
 
-     if (accounType === 'current' ){
-        points = points +10
-        console.log(points)
-     }else{
-        points = points +5
-        console.log(points)
-     }
-     if (repayment === 'high_repay') {
-        points = points +5  
-     }
-     if(points >= 30){
-       
-        alert (`Congratulation ${user}, Your Loan With Nas-Pay  has been Approved!!`)
-        location.reload();
-       
-        console.log('congrats')
-     }else{
-        console.log(points)
-       
+            if (currentBal === "") {
+                document.getElementById("aErr").textContent = "Please enter your current balance.";
+                isValid = false;
+            }
 
-        alert (`Dear ${user}! We are sorry but you can't get a Loan From us today contact our customer care agent to confirm if you're eligible before appling again thank you!!`)
-        location.reload();
-        
-        console.log('Try again later')
-     }
-     document.getElementById('loan-form').reset();
-window.scrollTo(0, 0);
+            if (loanAmount === "") {
+                document.getElementById("bErr").textContent = "Please enter the loan amount needed.";
+                isValid = false;
+            }
 
-}
+            if (creditHistory === "") {
+                document.getElementById("cErr").textContent = "Please select your credit history.";
+                isValid = false;
+            }
+
+            if (depositDate === "") {
+                document.getElementById("dErr").textContent = "Please select the last deposit date.";
+                isValid = false;
+            }
+
+            if (collectionDate === "") {
+                document.getElementById("eErr").textContent = "Please select the last loan collection date.";
+                isValid = false;
+            }
+
+            if (repayment === "") {
+                document.getElementById("fErr").textContent = "Please select the loan repayment period.";
+                isValid = false;
+            }
+
+            if (accountType === "") {
+                document.getElementById("gErr").textContent = "Please select the account type.";
+                isValid = false;
+            }
+
+            //  scoring and submission
+            if (isValid) {
+                if ((currentBal) > (loanAmount)) {
+                    points += 10;
+                } else {
+                    points -= 10;
+                }
+console.log (points)
+                if (creditHistory === 'high') {
+                    points += 10;
+                }
+
+                if (depositDate === 'high_1month') {
+                    points += 5;
+                }
+
+                if (collectionDate === 'col_high') {
+                    points += 10;
+                }
+
+                if (accountType === 'current') {
+                    points += 10;
+                } else {
+                    points += 5;
+                }
+
+                if (repayment === 'high_repay') {
+                    points += 5;
+                }
+
+                if (points >= 30) {
+                    window.open('approved.html');
+                  console.log(points)
+                } else {
+                  console.log(points)
+
+                    window.open('decline.html');
+                }
+
+                // Reset form and points
+                points = 0;
+                document.getElementById('loan-form').reset();
+            }
+        }

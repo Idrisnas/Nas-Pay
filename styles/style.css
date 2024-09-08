@@ -45,6 +45,7 @@ select {
 
 }
 
+
 input[type="number"]::placeholder {
     color: #aaa;
 }

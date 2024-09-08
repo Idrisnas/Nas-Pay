@@ -94,26 +94,30 @@
 <h1>Please Fill The form Below to Apply for Our Quick Loan</h1>
         <div class="form-container" id="container">
             <h1 id="top1"></h1>
-            <form action="submit.html" id="loan-form">
+            <form action="" id="loan-form">
                 <div class="form-group">
                     <label for="current_bal">Current Amount in Your Account</label>
-                    <input type="number" id="current_bal" placeholder="Enter current balance in your Account" required>
-                    <span id="amt_error"></span>
+                    <input type="number" id="current_bal" placeholder="Enter current balance in your Account" >
+                    <span id="aErr" style="color: red;"></span>
                 </div>
                 <div class="form-group">
                     <label for="amt_to_collect">Loan Amount Needed</label>
-                    <input type="number" id="amt_to_collect" placeholder="Enter loan amount" required>
+                    <input type="number" id="amt_to_collect" placeholder="Enter loan amount" >
                     <span id="amt_error"></span>
+                    <span id="bErr" style="color: red;"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="credit-history"> Credit History</label>
-                    <select id="credit-history" required>
+                    <select id="credit-history" >
                         <option value="" disabled selected>Please select credit history</option>
                         <option value="less">Two months</option>
                         <option value="less">Four months</option>
                         <option value="high">Six months</option>
                         <option value="high">Eight months</option>
                     </select>
+                    <span id="cErr" style="color: red;"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="deposit_date">Last Deposit Date</label>
@@ -125,6 +129,8 @@
                         <option value="high_1month">Within Two months</option>
                         <option value="high_1month">Within Three months</option>
                     </select>
+                    <span id="dErr" style="color: red;"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="collection_date">Last Loan Collection Date</label>
@@ -133,6 +139,8 @@
                         <option value="col_less">One month ago</option>
                         <option value="col_high">Six months ago</option>
                     </select>
+                    <span id="eErr" style="color: red;"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="repayment">Loan Repayment Period</label>
@@ -141,6 +149,8 @@
                         <option value="less_repay">1 month</option>
                         <option value="high_repay">6 months</option>
                     </select>
+                    <span id="fErr" style="color: red;"></span>
+
                 </div>
                 <div class="form-group">
                     <label for="account_type">Account Type</label>
@@ -149,6 +159,8 @@
                         <option value="current">Current</option>
                         <option value="savings">Savings</option>
                     </select>
+                    <span id="gErr" style="color: red;"></span>
+
                 </div>
                 <button onclick="getLoan()" type="button"></a>Submit</button>
                 <p id="finish"></p>
